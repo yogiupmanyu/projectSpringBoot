@@ -10,6 +10,7 @@ import org.springframework.data.repository.CrudRepository;
  * Created by Mary Ellen Bowman
  */
 public interface TourPackageRepository extends CrudRepository<TourPackage, String> {
-    TourPackage findByName(String name);
+	
+    TourPackage findByName(@Param("name") String name);
 }
 
